@@ -1,0 +1,38 @@
+.burger__menu_wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+.close__btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+  
+}
+.burger__menu-inner{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    background-color: red;
+
+    .close__btn {
+        position: absolute;
+        top: 0;
+    }
+
+}
+    
+}

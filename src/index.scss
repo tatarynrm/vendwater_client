@@ -1,0 +1,162 @@
+@import'./styles/index.scss';
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#root {
+  position: relative;
+}
+body {
+  background-color: #FAFAFA;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  padding: 20px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: var(--blue-color);
+  cursor: pointer!important;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+
+
+
+.opportunities {
+padding-top: 100px;
+}
+
+
+
+.block__title{
+
+
+  
+}
+
+
+h4{
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  z-index: 999;
+  background-color: #FAFAFA;
+  span {
+    background-color: #FAFAFA;
+  }
+
+  &::before
+ {
+    content: '';
+    // position: absolute;
+  display: block;
+    height: 3px;
+    width: 40%;
+    background-color: var(--black-color);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: -2;
+}
+&::after {
+  content: '';
+  // position: absolute;
+display: block;
+  height: 3px;
+  width: 40%;
+  background-color: var(--black-color);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: -2;
+}
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top:80px ;
+
+  .left__block {
+    width: 100%;
+    img {
+      width: 100%;
+
+    }
+  }
+  .right__block {
+    width: 100%;
+    font-size: 26px;
+    color: var(--black-color);
+    margin-left: 50px;
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+      li {
+      
+      display: flex;
+      gap: 14px;
+        &::before{
+          content: '';
+          background-image: url('./assets/svg/checkmarks.svg');
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 56px;
+          height: 42px;
+          display: block;
+        }
+      }
+    } 
+  }
+}
+
+
+
+// Співпраця
+
+// Переваги
+@media only screen and (max-width:1048px) { 
+.opportunities{
+  .items {
+    display: flex;
+    flex-direction: column;
+
+
+    .right__block{
+      font-size: 20px;
+      margin-left: 0px;
+    }
+  }
+}
+}
+@media only screen and (max-width:648px) { 
+.opportunities{
+  .items {
+    display: flex;
+    flex-direction: column;
+
+
+    .right__block{
+      font-size: 14px;
+      margin-left: 0px;
+    }
+  }
+}
+}

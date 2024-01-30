@@ -1,0 +1,152 @@
+.hero__info {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    &-left {
+text-align: left;
+button {
+    margin-top: 20px;
+
+}
+    h1{
+        font-size: 48px;
+    }
+    h4{
+        font-size: 20px;
+    }
+    }
+
+&-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+.img {
+    height: 80%;
+    // width: 20px;
+    width: 80%;
+
+    img {
+        width: 100%;
+    }
+}
+
+    .machines__info {
+        display: flex;
+        gap: 48px;
+        width: 100%;
+    
+        bottom: 0;
+        &-items {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+
+
+}
+
+
+
+@media only screen and (max-width: 1440px) {
+
+    .hero__info {
+        &-left{
+            h1 {
+                font-size: 30px;
+            }
+            h5 {
+                font-size: 24px;
+            }
+            button {
+                font-size: 20px;
+            }
+        }
+
+
+
+
+        
+    }
+    
+
+}
+@media only screen and (max-width: 1048px) {
+
+    .hero__info {
+        display: flex;
+        flex-direction: column;
+        &-left{
+            h1 {
+                font-size: 30px;
+            }
+            h5 {
+                font-size: 24px;
+            }
+            button {
+                font-size: 20px;
+            }
+        }
+
+
+        &-right {
+            height: 400px;
+            .img {
+                width: 50%;
+            }
+        }
+
+        
+    }
+    
+
+}
+@media only screen and (max-width: 648px) {
+
+    .hero__info {
+        display: flex;
+        flex-direction: column;
+        &-left{
+            align-items: center;
+            text-align: center;
+            h1 {
+                font-size: 23px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin-top:60px ;
+                color: var(--black-color, #161616);
+            }
+            h5 {
+                font-size: 24px;
+                font-size: 17px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 136%; /* 23.12px */
+                font-family: 'regular';
+            }
+            button {
+                font-size: 20px;
+            }
+        }
+
+
+        &-right {
+            width: 229.25px;
+            height: 416.638px;
+            flex-shrink: 0;
+            .img {
+                width: 100%;
+            }
+        }
+
+        
+    }
+    
+
+}
