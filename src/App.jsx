@@ -6,25 +6,21 @@ import Opportunities from "./blocks/hero/Opportunities";
 import Footer from "./components/footer/Footer";
 import BurgerMenu from "./components/burger-menu/BurgerMenu";
 
-
 function App() {
-  const [burgerMenu,setBurgerMenu] = useState(false)
+  const [burgerMenu, setBurgerMenu] = useState(false);
+  const [consult, setConsult] = useState(false);
 
-
-  useEffect(()=>{
-
-  },[burgerMenu])
+  useEffect(() => {}, [burgerMenu]);
   return (
-<>
-<Hero burgerMenu={burgerMenu} setBurgerMenu={setBurgerMenu}/>
-<Opportunities/>
-<Machines/>
-<Cooperation/>
-<Footer/>
+    <>
+      <Hero burgerMenu={burgerMenu} setBurgerMenu={setBurgerMenu} />
+      <Opportunities />
+      <Machines />
+      <Cooperation consult={consult} setConsult={setConsult} />
+      <Footer consult={consult} setConsult={setConsult} />
 
-{/* {burgerMenu && <BurgerMenu/>} */}
-
-</>
+      {/* {burgerMenu && <BurgerMenu/>} */}
+    </>
   );
 }
 

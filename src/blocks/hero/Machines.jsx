@@ -21,7 +21,7 @@ const Machines = () => {
             "Водомат V-WATER"
           </div>
           <div className="price">ціна від 1500$</div>
-          <button>Отримати консультацію</button>
+          <button> <a href="#contacts">Отримати консультацію</a> </button>
         </div>
         <div className="item">
           <div className="img">
@@ -32,7 +32,7 @@ const Machines = () => {
             "Водомат V-WATER"
           </div>
           <div className="price">ціна від 1500$</div>
-          <button>Отримати консультацію</button>
+          <button> <a href="#contacts">Отримати консультацію</a> </button>
         </div>
         <div className="item">
           <div className="img">
@@ -43,7 +43,7 @@ const Machines = () => {
             "Водомат V-WATER"
           </div>
           <div className="price">ціна від 1500$</div>
-          <button>Отримати консультацію</button>
+          <button> <a href="#contacts">Отримати консультацію</a> </button>
         </div>
       </div>
     </section>

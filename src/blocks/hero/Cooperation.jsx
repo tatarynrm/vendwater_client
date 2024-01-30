@@ -10,7 +10,7 @@ const cooperationItems = [
   {text:"Обговорення та вибір місця для розміщення водомату"},
   {text:"Виготовлення і встановлення апарату"},
 ]
-const Cooperation = () => {
+const Cooperation = ({consult,setConsult}) => {
 const [name,setName] = useState('')
 const [phone,setPhone] = useState('')
 const [success,setSuccess] = useState('')
@@ -62,15 +62,21 @@ console.log(name,phone);
 
       <h5>Бажаєте отримати консультацію?</h5>
 
-<div id='contacts' className="form">
+<div style={{borderColor:consult ?"green" : "blue"}} id='contacts' className="form">
   <span className="form__title">Безкоштовна консультація</span>
 
 <div className="form__section">
 <div className="form__control">
-    <input type="text" placeholder='ПІБ' value={name} onChange={e=> setName(e.target.value)} />
+    <input type="text" placeholder='ПІБ' value={name} onChange={e=> {
+      setName(e.target.value)
+      setConsult(false)
+    }} />
   </div>
   <div className="form__control">
-    <input type="text" placeholder='Телефон' value={phone} onChange={e=> setPhone(e.target.value) }/>
+    <input type="text" placeholder='Телефон' value={phone} onChange={e=> {
+      setPhone(e.target.value)
+      setConsult(false)
+    } }/>
   </div>
 </div>
 
