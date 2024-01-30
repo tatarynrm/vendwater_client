@@ -15,7 +15,7 @@ const HeroInfo = () => {
           <br />
           Не шукайте споживачів – вони знайдуть вас самі
         </h5>
-        <Button text={"Отримати консультацію ->"}/>
+       <a href="#contacts"><Button text={"Отримати консультацію"}/></a>
       </div>
       <div className="hero__info-right">
         <div className="img">
