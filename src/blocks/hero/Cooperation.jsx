@@ -22,7 +22,7 @@ if (name.length < 2 || phone.length < 4) {
   alert('Заповніть усі поля')
 }else {
   const data = await axios.get(
-    `https://api.telegram.org/bot6915884675:AAFa79fdOgGQsnBzcy9Gff4IE6fhApFa2Ic/sendMessage?chat_id=${tgRomanTataryn}&text=${name} - <code>${phone}</code>&&parse_mode=html`
+    `https://api.telegram.org/bot6915884675:AAFa79fdOgGQsnBzcy9Gff4IE6fhApFa2Ic/sendMessage?chat_id=${tgSergeyZyban}&text=${name} - <code>${phone}</code>&&parse_mode=html`
   )
   if (data.status === 200) {
     setName('')
