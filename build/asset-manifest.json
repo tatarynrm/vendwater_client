@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.415c9d6c.css",
+    "main.js": "/static/js/main.cbd0b2a8.js",
+    "static/media/man_water.png": "/static/media/man_water.ff44855bd491550df34a.png",
+    "static/media/cooperation.png": "/static/media/cooperation.69fcde8b04ec2bc8ab28.png",
+    "static/media/numbers-and-machine.png": "/static/media/numbers-and-machine.59e67dc529b2b492b4d0.png",
+    "static/media/machine.png": "/static/media/machine.9d814edd9c30a4f28983.png",
+    "static/media/hero.jpg": "/static/media/hero.ed0c87d34b417c40fce4.jpg",
+    "static/media/machine_1.png": "/static/media/machine_1.96cfb3c0896fbb5545f6.png",
+    "static/media/machine_3.png": "/static/media/machine_3.e30075f6bfc7ce245630.png",
+    "static/media/machine_2.png": "/static/media/machine_2.988957c6484bb9d04984.png",
+    "static/media/e-Ukraine-Medium.otf": "/static/media/e-Ukraine-Medium.768e3644ab7db178be11.otf",
+    "static/media/e-Ukraine-Regular.otf": "/static/media/e-Ukraine-Regular.38805a5a6a103eb1aa7d.otf",
+    "static/media/e-Ukraine-UltraLight.otf": "/static/media/e-Ukraine-UltraLight.0db29a0c254eda5ab03e.otf",
+    "static/media/e-Ukraine-Bold.otf": "/static/media/e-Ukraine-Bold.b0b74cb733e17bc41a86.otf",
+    "static/media/mdi_instagram.svg": "/static/media/mdi_instagram.fc72c3b2b2dd05300c173cb5fb25799b.svg",
+    "static/media/ic_twotone-telegram.svg": "/static/media/ic_twotone-telegram.260b3a4011f4c8d9f0571de9e714711b.svg",
+    "index.html": "/index.html",
+    "static/media/uil_facebook.svg": "/static/media/uil_facebook.8972db3e6bd3cddcb4b87c0768f51615.svg",
+    "static/media/checkmarks.svg": "/static/media/checkmarks.a4966d263e6a09a34458.svg",
+    "main.415c9d6c.css.map": "/static/css/main.415c9d6c.css.map",
+    "main.cbd0b2a8.js.map": "/static/js/main.cbd0b2a8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.415c9d6c.css",
+    "static/js/main.cbd0b2a8.js"
+  ]
+}
