@@ -5,6 +5,7 @@ import Machines from "./blocks/hero/Machines";
 import Opportunities from "./blocks/hero/Opportunities";
 import Footer from "./components/footer/Footer";
 import BurgerMenu from "./components/burger-menu/BurgerMenu";
+import { FaPhoneAlt } from "react-icons/fa";
 
 function App() {
   const [burgerMenu, setBurgerMenu] = useState(false);
@@ -18,7 +19,12 @@ function App() {
       <Machines />
       <Cooperation consult={consult} setConsult={setConsult} />
       <Footer consult={consult} setConsult={setConsult} />
-
+      <section className="call-buton">
+        <a class="cc-calto-action-ripple" href="tel:+380968318989">
+          <i class="fa fa-phone"><FaPhoneAlt fontSize={20}/></i>
+          {/* <span class="num">0909.999.999</span> */}
+        </a>
+      </section>
       {/* {burgerMenu && <BurgerMenu/>} */}
     </>
   );
