@@ -30,7 +30,7 @@ const getPhone = async ()=>{
       <Machines />
       <Cooperation consult={consult} setConsult={setConsult} />
       <Footer consult={consult} setConsult={setConsult} />
-      <section className="call-buton">380968318989
+      <section className="call-buton">
         <a className="cc-calto-action-ripple" href={`tel:+${phone}`}>
           <i className="fa fa-phone">
             <FaPhoneAlt fontSize={20} />
