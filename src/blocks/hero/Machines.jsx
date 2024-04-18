@@ -27,51 +27,26 @@ const Machines = () => {
         </h4>
       </div>
       <div className="machines__items">
-        <div className="item">
-          <div className="img">
-            <img src={machine1} alt="" />
-          </div>
-          <div className="title">
-            {/* Блок наливу <br />
-            "Водомат V-WATER" */}
-            {machines?.[0]?.machine_name}
-          </div>
-          <div className="price">ціна від {machines?.[0]?.machine_price}$</div>
-          <button>
-            {" "}
-            <a href="#contacts">Отримати консультацію</a>{" "}
-          </button>
-        </div>
-        <div className="item">
-          <div className="img">
-            <img src={machine2} alt="" />
-          </div>
-          <div className="title">
-            {/* Блок наливу <br />
-            "Водомат V-WATER" */}
-            {machines?.[1]?.machine_name}
-          </div>
-          <div className="price">ціна від {machines?.[1]?.machine_price}$</div>
-          <button>
-            {" "}
-            <a href="#contacts">Отримати консультацію</a>{" "}
-          </button>
-        </div>
-        <div className="item">
-          <div className="img">
-            <img src={machine3} alt="" />
-          </div>
-          <div className="title">
-            {/* Блок наливу <br />
-            "Водомат V-WATER" */}
-            {machines?.[2]?.machine_name}
-          </div>
-          <div className="price">ціна від {machines?.[2]?.machine_price}$</div>
-          <button>
-            {" "}
-            <a href="#contacts">Отримати консультацію</a>{" "}
-          </button>
-        </div>
+        {machines &&
+          machines
+          .filter(item => item)
+          .sort((a,b) => a.id - b.id)
+          .map((item, idx) => {
+            return (
+              <div key={idx} className="item">
+                <div className="img">
+                  <img src={machine1} alt="Водомат" />
+                </div>
+                <div className="title">
+                  {item.machine_name}
+                </div>
+                <div className="price">ціна від {item.machine_price}$</div>
+                <button>
+                  <a href="#contacts">Отримати консультацію</a>{" "}
+                </button>
+              </div>
+            );
+          })}
       </div>
     </section>
   );
