@@ -6,12 +6,23 @@ import Opportunities from "./blocks/hero/Opportunities";
 import Footer from "./components/footer/Footer";
 import BurgerMenu from "./components/burger-menu/BurgerMenu";
 import { FaPhoneAlt } from "react-icons/fa";
+import axios from "axios";
 
 function App() {
   const [burgerMenu, setBurgerMenu] = useState(false);
   const [consult, setConsult] = useState(false);
-
+  const [phone,setPhone] = useState(null)
+const getPhone = async ()=>{
+  try {
+    const {data} = await axios.get(`https://api.vendmarket.space/site/contacts`);
+    console.log(data);
+    setPhone(data.phone_number)
+  } catch (error) {
+    console.log(error);
+  }
+}
   useEffect(() => {}, [burgerMenu]);
+  useEffect(() => {getPhone()}, []);
   return (
     <>
       <Hero burgerMenu={burgerMenu} setBurgerMenu={setBurgerMenu} />
@@ -19,8 +30,8 @@ function App() {
       <Machines />
       <Cooperation consult={consult} setConsult={setConsult} />
       <Footer consult={consult} setConsult={setConsult} />
-      <section className="call-buton">
-        <a className="cc-calto-action-ripple" href="tel:+380968318989">
+      <section className="call-buton">380968318989
+        <a className="cc-calto-action-ripple" href={`tel:+${phone}`}>
           <i className="fa fa-phone">
             <FaPhoneAlt fontSize={20} />
           </i>
