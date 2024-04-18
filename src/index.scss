@@ -161,7 +161,14 @@ display: block;
 }
 }
 
-
+.machines__items {
+  .item {
+    .title{
+      max-width: 40%;
+ 
+    }
+  }
+}
 
 
 .call-buton .cc-calto-action-ripple {

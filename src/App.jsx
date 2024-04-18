@@ -20,9 +20,10 @@ function App() {
       <Cooperation consult={consult} setConsult={setConsult} />
       <Footer consult={consult} setConsult={setConsult} />
       <section className="call-buton">
-        <a class="cc-calto-action-ripple" href="tel:+380968318989">
-          <i class="fa fa-phone"><FaPhoneAlt fontSize={20}/></i>
-          {/* <span class="num">0909.999.999</span> */}
+        <a className="cc-calto-action-ripple" href="tel:+380968318989">
+          <i className="fa fa-phone">
+            <FaPhoneAlt fontSize={20} />
+          </i>
         </a>
       </section>
       {/* {burgerMenu && <BurgerMenu/>} */}
